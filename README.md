@@ -1,1 +1,2 @@
-# modx_custom_stock
+# MODX Revo + Minishop2 
+## Складской учет
