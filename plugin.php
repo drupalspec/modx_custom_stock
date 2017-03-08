@@ -1,6 +1,6 @@
 <?php
 switch ($modx->event->name) {
-    // Вешаем слушатель на событие смены статуса товара
+    // Вешаем слушатель на событие смены статуса заказа
     case 'msOnChangeOrderStatus':
         $modx->getService('error', 'error.modError');
         $modx->setLogLevel(modX::LOG_LEVEL_INFO);
