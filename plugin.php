@@ -35,10 +35,6 @@ switch ($modx->event->name) {
     
     // Вешаем слушатель на смену кол-ва товара в карточке и корзине
     case 'msOnBeforeChangeInCart': case 'msOnChangeInCart':
-        $modx->getService('error', 'error.modError');
-        $modx->setLogLevel(modX::LOG_LEVEL_INFO);
-        $modx->setLogTarget('FILE');
-        
         // Получаем массив корзины.
         $tmp = $cart->get();
         $id = $tmp[$key]['id'];
